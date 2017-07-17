@@ -10,5 +10,9 @@
 
   <body>
     <%= yield %>
+    
+  <% if session[:source] %>
+    <p>Hi Conner! I see that you are wearing a <%= session[:source] %></p>
+  <% end %>
   </body>
 </html>
