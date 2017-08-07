@@ -14,11 +14,23 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+          
+          <%= yield %>
     
-    <%= render "shared/nav", location: 'top' %>
+          <%= render "shared/application_nav" %>
     
-    <%= source_helper("application") %>
-    
+          <%= source_helper("application") %>
+          
+        </div>
+
+      </div>
+
+    </div>
+
   </body>
 </html>
