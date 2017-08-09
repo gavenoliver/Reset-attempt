@@ -23,11 +23,13 @@
 
         <div class="cover-container">
           
-          <%= yield %>
+          <div id="background"></div>
+
+            <%= render "shared/application_nav" %>
+
+            <%= yield %>
     
-          <%= render "shared/application_nav" %>
-    
-          <%= source_helper("application") %>
+            <%= source_helper("application") %>
           
         </div>
 
